@@ -1,0 +1,146 @@
+:root {
+  --color-blue: hsla(218, 100%, 43%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-dark: hsla(240, 8%, 15%, 1);
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+}
+
+.about-container {
+  padding-top: 100px;
+  margin-bottom: 6rem;
+  width: 100%;
+}
+
+.about-container h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  color: var(--color-dark);
+}
+
+.about {
+  width: 90%;
+  max-width: 1660px;
+  margin: 0 auto 7rem auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.about-text p {
+  max-width: 600px;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  font-family: var(--font-md);
+}
+
+.about-text p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.about-image img {
+  width: 550px;
+  padding: 0 3.5rem;
+}
+
+.mission-vision {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  color: var(--color-dark);
+  width: 90%;
+  margin: 0 auto 5rem auto;
+  max-width: 1660px;
+}
+
+.mission-vision img {
+  width: 6rem;
+}
+
+.mission {
+  background-color: #e5eefb;
+  border-radius: 24px;
+  padding: 3rem 1rem;
+}
+
+.vision {
+  background-color: #e5eefb;
+  border-radius: 24px;
+  padding: 3rem 1rem;
+}
+
+.mission img {
+  margin-bottom: 2rem;
+}
+
+.mission h4 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.mission p {
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.vision img {
+  margin-bottom: 2rem;
+}
+
+.vision h4 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.vision p {
+  max-width: 450px;
+  line-height: 1.5;
+}
+
+.core-values {
+  text-align: center;
+  color: var(--color-dark);
+  width: 90%;
+  max-width: 1660px;
+  margin: 0 auto;
+}
+
+.core-values h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.9rem;
+}
+
+.core-values p {
+  font-family: var(--font-md);
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.each-grid img {
+  margin-bottom: 1rem;
+  width: 5.9rem;
+}
+
+.each-grid h4 {
+  font-weight: var(--font-medium);
+}
+
+@media (max-width: 768px) {
+  .mission-vision {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+}

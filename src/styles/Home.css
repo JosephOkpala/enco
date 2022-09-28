@@ -1,0 +1,170 @@
+:root {
+  --color-blue: hsla(218, 100%, 43%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-dark: hsla(240, 8%, 15%, 1);
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+}
+
+.home {
+  padding-top: 80px;
+}
+
+.background-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../assets/hero-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.top-tier {
+  position: relative;
+}
+
+.top-tier::before {
+  content: '';
+  position: absolute;
+  background-color: var(--color-blue);
+  width: 100%;
+  height: 0.3rem;
+  bottom: -5px;
+  border-radius: 2px;
+}
+
+.hero-content h1 {
+  color: var(--color-white);
+  font-size: 4rem;
+  z-index: 2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  color: var(--color-white);
+  font-size: 1.4rem;
+  line-height: 1.4;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--font-md);
+}
+
+.what-we-can-do {
+  width: 100%;
+  position: relative;
+  margin-bottom: 9rem;
+}
+
+.what-we-can-do h2 {
+  text-align: center;
+  color: var(--color-dark);
+  font-size: 3.5rem;
+  margin: 7rem 0 4rem 0;
+}
+
+.services {
+  font-size: 10rem;
+  font-weight: var(--font-bold);
+  position: absolute;
+  top: -50px;
+  left: -3rem;
+  z-index: -2;
+  color: hsla(0, 0%, 85%, 0.2);
+  user-select: none;
+}
+
+.what-we-can-do-content {
+  width: 90%;
+  max-width: 1660px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content-text p {
+  max-width: 600px;
+  line-height: 1.5;
+  font-family: var(--font-md);
+  font-size: 1.1rem;
+  color: var(--color-dark);
+}
+
+.content-text p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.content-img {
+  display: flex;
+  align-items: center;
+}
+
+/* adjust sizes */
+
+.women-img img {
+  max-width: 600px;
+}
+
+.man-img img {
+  max-width: 600px;
+}
+/* adjust sizes */
+
+/*       WHY CHOOSE US SECTION         */
+
+.reason-to-choose-us {
+  background-color: hsla(215, 73%, 94%, 1);
+  max-width: 1660px;
+  padding: 4rem 0rem;
+  width: 100%;
+  margin: 0 auto 4rem auto;
+}
+
+.reason-to-choose-us h3 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color-dark);
+  margin-bottom: 3rem;
+}
+
+.reasons {
+  width: 90%;
+  max-width: 1660px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.each-reason img {
+  margin-bottom: 2rem;
+  width: 5rem;
+}
+
+@media (max-width: 768px) {
+  .what-we-can-do-content {
+    flex-direction: column;
+  }
+
+  .reasons {
+    flex-direction: column;
+  }
+
+  .each-reason {
+    margin-bottom: 3rem;
+  }
+
+  .services {
+    font-size: 7rem;
+  }
+}

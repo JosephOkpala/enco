@@ -1,0 +1,91 @@
+:root {
+  --color-blue: hsla(218, 100%, 43%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-dark: hsla(240, 8%, 15%, 1);
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+}
+
+.product-container {
+  padding-top: 100px;
+  width: 90%;
+  max-width: 1660px;
+  margin: 0 auto;
+}
+
+.product-container h1 {
+  text-align: center;
+  color: var(--color-dark);
+  font-size: 3rem;
+  font-weight: var(--font-bold);
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.loans {
+  margin-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.loans .circle {
+  width: 2rem;
+  height: 2rem;
+  background-color: #0052dc;
+  border-radius: 50%;
+}
+
+.loans h3 {
+  font-size: 1.9rem;
+  font-weight: var(--font-medium);
+}
+
+.products-flex {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 7rem;
+}
+
+/* .business-loan {
+  flex-direction: row-reverse;
+} */
+
+.loan-text p {
+  margin-bottom: 1rem;
+}
+
+.loan-text {
+  padding: 2rem;
+  box-shadow: 0px 8px 6px 2px rgba(35, 35, 41, 0.1);
+  -webkit-box-shadow: 0px 8px 6px 2px rgba(35, 35, 41, 0.1);
+  -moz-box-shadow: 0px 8px 6px 2px rgba(35, 35, 41, 0.1);
+}
+
+.business-loan-text {
+  padding-left: 2rem;
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .products-flex {
+    flex-direction: column;
+  }
+
+  .personal-loans img {
+    width: 420px;
+  }
+
+  .business-loan img {
+    width: 420px;
+  }
+
+  .column {
+    flex-direction: column-reverse;
+  }
+}

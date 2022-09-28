@@ -1,3 +1,11 @@
+import img1 from '../assets/african-american.png';
+import img2 from '../assets/african-american3.png';
+import img3 from '../assets/businessman-leader.png';
+// import Testimonials from './Testimonials';
+import riskicon from '../assets/risk-icon.png';
+import customerservice from '../assets/customer-service-icon.png';
+import lowcost from '../assets/low-cost-icon.png';
+
 const Home = () => {
   return (
     <div className="home">
@@ -14,6 +22,7 @@ const Home = () => {
       </div>
       <section className="what-we-can-do">
         <h2>Here's what we can do for you</h2>
+        <p className="services">Services</p>
         <div className="what-we-can-do-content">
           <div className="content-text">
             <p>
@@ -34,9 +43,35 @@ const Home = () => {
               to meet the financing needs of its members.
             </p>
           </div>
-          <div className="content-img"></div>
+          <div className="content-img">
+            <div className="women-img">
+              <img src={img1} alt="african-american-woman1" />
+              <img src={img2} alt="african-american-woman2" />
+            </div>
+            <div className="man-img">
+              <img src={img3} alt="businessman-leader" />
+            </div>
+          </div>
         </div>
       </section>
+      <section className="reason-to-choose-us">
+        <h3>WHY CHOOSE US</h3>
+        <div className="reasons">
+          <div className="each-reason">
+            <img src={riskicon} alt="low-risk-management icon" />
+            <p>Low Risk Management</p>
+          </div>
+          <div className="each-reason">
+            <img src={customerservice} alt="customer-service icon" />
+            <p>Excellent Customer Service</p>
+          </div>
+          <div className="each-reason">
+            <img src={lowcost} alt="low-cost icon" />
+            <p>Low Cost Model</p>
+          </div>
+        </div>
+      </section>
+      {/* <Testimonials /> */}
     </div>
   );
 };

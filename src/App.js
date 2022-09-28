@@ -1,12 +1,18 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import About from './components/About';
-import Home from './components/Home';
-import Products from './components/Products';
-import Error from './components/Error';
+import './styles/Navbar.css';
+import './styles/Home.css';
+import './styles/About.css';
+import './styles/Product.css';
+import './styles/Testimonials.css';
+import './styles/Footer.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Home from './components/Home';
+import About from './components/About';
+import Products from './components/Products';
+import Error from './components/Error';
 
 const App = () => {
   return (
