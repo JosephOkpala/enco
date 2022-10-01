@@ -10,21 +10,21 @@
 .product-container {
   padding-top: 100px;
   width: 90%;
-  max-width: 1660px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .product-container h1 {
   text-align: center;
   color: var(--color-dark);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: var(--font-bold);
   margin-bottom: 4rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .loans {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -38,7 +38,7 @@
 }
 
 .loans h3 {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-weight: var(--font-medium);
 }
 
@@ -49,27 +49,33 @@
   margin-bottom: 7rem;
 }
 
-/* .business-loan {
-  flex-direction: row-reverse;
-} */
+.products-flex img {
+  max-width: 60%;
+}
 
-.loan-text p {
+.loan-text-p p:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.loan-text {
-  padding: 2rem;
-  box-shadow: 0px 8px 6px 2px rgba(35, 35, 41, 0.1);
-  -webkit-box-shadow: 0px 8px 6px 2px rgba(35, 35, 41, 0.1);
-  -moz-box-shadow: 0px 8px 6px 2px rgba(35, 35, 41, 0.1);
+.loan-text-p {
+  padding: 2rem 2rem 0rem 2.5rem;
 }
 
-.business-loan-text {
-  padding-left: 2rem;
+.loan-text {
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 5px 6px rgba(35, 35, 41, 0.05);
+  -webkit-box-shadow: 0px 0px 5px 6px rgba(35, 35, 41, 0.05);
+  -moz-box-shadow: 0px 0px 5px 6px rgba(35, 35, 41, 0.05);
+  border-radius: 8px;
+  line-height: 1.9;
+}
+
+.loan-text ul {
+  padding: 2rem 3rem 3rem 4rem;
 }
 
 ul li:not(:last-child) {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1em;
 }
 
 @media (max-width: 768px) {
@@ -77,15 +83,26 @@ ul li:not(:last-child) {
     flex-direction: column;
   }
 
-  .personal-loans img {
-    width: 420px;
-  }
-
-  .business-loan img {
-    width: 420px;
-  }
-
   .column {
     flex-direction: column-reverse;
+  }
+
+  .personal-loans img {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .products-flex {
+    flex-direction: column;
+  }
+  .column {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-flex img {
+    max-width: 100%;
   }
 }

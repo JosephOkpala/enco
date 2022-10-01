@@ -9,32 +9,42 @@
 
 .about-container {
   padding-top: 100px;
-  margin-bottom: 6rem;
-  width: 100%;
+  margin: 0rem auto 6rem auto;
+  width: 90%;
+  max-width: 1600px;
 }
 
 .about-container h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 3rem;
   margin-top: 2rem;
   color: var(--color-dark);
 }
 
 .about {
-  width: 90%;
-  max-width: 1660px;
-  margin: 0 auto 7rem auto;
+  width: 100%;
+  margin: 0 auto 12rem auto;
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 2rem;
   align-items: center;
+}
+
+.about-text {
+  box-shadow: 0px 0px 5px 6px rgba(35, 35, 41, 0.05);
+  -webkit-box-shadow: 0px 0px 5px 6px rgba(35, 35, 41, 0.05);
+  -moz-box-shadow: 0px 0px 5px 6px rgba(35, 35, 41, 0.05);
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: 8px;
 }
 
 .about-text p {
   max-width: 600px;
-  line-height: 1.7;
+  line-height: 1.9;
   font-size: 1.1rem;
-  font-family: var(--font-md);
+  font-weight: var(--font-regular);
 }
 
 .about-text p:not(:last-child) {
@@ -42,8 +52,9 @@
 }
 
 .about-image img {
-  width: 550px;
-  padding: 0 3.5rem;
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
 }
 
 .mission-vision {
@@ -54,8 +65,8 @@
   text-align: center;
   color: var(--color-dark);
   width: 90%;
-  margin: 0 auto 5rem auto;
-  max-width: 1660px;
+  margin: 0 auto 8rem auto;
+  max-width: 1600px;
 }
 
 .mission-vision img {
@@ -78,28 +89,25 @@
   margin-bottom: 2rem;
 }
 
-.mission h4 {
-  margin-bottom: 2rem;
+.mission-vision h4 {
   font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.mission-vision p {
+  line-height: 1.8;
 }
 
 .mission p {
   max-width: 400px;
-  line-height: 1.5;
 }
 
 .vision img {
   margin-bottom: 2rem;
 }
 
-.vision h4 {
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-}
-
 .vision p {
   max-width: 450px;
-  line-height: 1.5;
 }
 
 .core-values {
@@ -135,12 +143,31 @@
   font-weight: var(--font-medium);
 }
 
+@media (max-width: 1024px) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-image img {
+    max-width: 80%;
+  }
+}
+
 @media (max-width: 768px) {
   .mission-vision {
     flex-direction: column;
   }
 
-  .about {
-    flex-direction: column;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-image img {
+    max-width: 95%;
   }
 }

@@ -16,11 +16,13 @@
     url('../assets/hero-img.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
 }
 
 .hero-content {
@@ -51,11 +53,11 @@
 .hero-content p {
   color: var(--color-white);
   font-size: 1.4rem;
-  line-height: 1.4;
+  line-height: 1.8;
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
-  font-family: var(--font-md);
+  font-weight: var(--font-regular);
 }
 
 .what-we-can-do {
@@ -68,7 +70,8 @@
   text-align: center;
   color: var(--color-dark);
   font-size: 3.5rem;
-  margin: 7rem 0 4rem 0;
+  margin: 7rem auto 4rem auto;
+  width: 90%;
 }
 
 .services {
@@ -84,7 +87,7 @@
 
 .what-we-can-do-content {
   width: 90%;
-  max-width: 1660px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -93,7 +96,7 @@
 
 .content-text p {
   max-width: 600px;
-  line-height: 1.5;
+  line-height: 1.9;
   font-family: var(--font-md);
   font-size: 1.1rem;
   color: var(--color-dark);
@@ -123,8 +126,8 @@
 
 .reason-to-choose-us {
   background-color: hsla(215, 73%, 94%, 1);
-  max-width: 1660px;
-  padding: 4rem 0rem;
+  max-width: 1600px;
+  padding: 4rem 0rem 5rem 0rem;
   width: 100%;
   margin: 0 auto 4rem auto;
 }
@@ -133,12 +136,13 @@
   text-align: center;
   font-size: 3rem;
   color: var(--color-dark);
-  margin-bottom: 3rem;
+  margin: 0rem auto 4rem auto;
+  width: 90%;
 }
 
 .reasons {
   width: 90%;
-  max-width: 1660px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -156,6 +160,10 @@
     flex-direction: column;
   }
 
+  .content-text p {
+    text-align: center;
+  }
+
   .reasons {
     flex-direction: column;
   }
@@ -166,5 +174,44 @@
 
   .services {
     font-size: 7rem;
+  }
+
+  .women-img {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .what-we-can-do-content {
+    display: flex;
+  }
+  .women-img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-content p {
+    padding: 0rem 1rem;
+  }
+
+  .services {
+    font-size: 5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .reason-to-choose-us h3 {
+    font-size: 2.6rem;
+  }
+
+  .what-we-can-do h2 {
+    font-size: 3rem;
   }
 }

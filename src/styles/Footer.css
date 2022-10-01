@@ -15,16 +15,16 @@ footer {
 
 .footer {
   width: 90%;
-  max-width: 1660px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 3rem 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-logo {
-  width: 9rem;
+  width: 7rem;
 }
 
 .footer p {
@@ -63,6 +63,8 @@ footer {
   margin-bottom: 1rem;
 }
 
+/*    min-width:769px and max-width:900px     */
+
 @media (max-width: 768px) {
   footer {
     padding-bottom: 3rem;
@@ -82,5 +84,17 @@ footer {
 
   .footer-logo {
     margin-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .address {
+    width: 180px;
+    line-height: 1.6;
+  }
+
+  .footer {
+    display: flex;
+    gap: 2rem;
   }
 }

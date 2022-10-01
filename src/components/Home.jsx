@@ -5,12 +5,19 @@ import img3 from '../assets/businessman-leader.png';
 import riskicon from '../assets/risk-icon.png';
 import customerservice from '../assets/customer-service-icon.png';
 import lowcost from '../assets/low-cost-icon.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="home">
       <div className="background-img">
-        <div className="hero-content">
+        <div className="hero-content" data-aos="fade-up" data-aos-once="true">
           <h1>
             <span className="top-tier">TOP TIER</span> FINANCIAL SOLUTIONS
           </h1>
@@ -21,10 +28,16 @@ const Home = () => {
         </div>
       </div>
       <section className="what-we-can-do">
-        <h2>Here's what we can do for you</h2>
+        <h2 data-aos="fade-up" data-aos-once="true">
+          Here's what we can do for you
+        </h2>
         <p className="services">Services</p>
         <div className="what-we-can-do-content">
-          <div className="content-text">
+          <div
+            data-aos="fade-right"
+            data-aos-once="true"
+            className="content-text"
+          >
             <p>
               The country operates in three major segments of the financial
               system namely the retail, corporate and public sector. In the
@@ -43,7 +56,11 @@ const Home = () => {
               to meet the financing needs of its members.
             </p>
           </div>
-          <div className="content-img">
+          <div
+            data-aos="fade-left"
+            data-aos-once="true"
+            className="content-img"
+          >
             <div className="women-img">
               <img src={img1} alt="african-american-woman1" />
               <img src={img2} alt="african-american-woman2" />
@@ -55,17 +72,19 @@ const Home = () => {
         </div>
       </section>
       <section className="reason-to-choose-us">
-        <h3>WHY CHOOSE US</h3>
+        <h3 data-aos="fade-up" data-aos-once="true">
+          WHY CHOOSE US
+        </h3>
         <div className="reasons">
-          <div className="each-reason">
+          <div className="each-reason" data-aos="fade-up" data-aos-once="true">
             <img src={riskicon} alt="low-risk-management icon" />
             <p>Low Risk Management</p>
           </div>
-          <div className="each-reason">
+          <div className="each-reason" data-aos="fade-up" data-aos-once="true">
             <img src={customerservice} alt="customer-service icon" />
             <p>Excellent Customer Service</p>
           </div>
-          <div className="each-reason">
+          <div className="each-reason" data-aos="fade-up" data-aos-once="true">
             <img src={lowcost} alt="low-cost icon" />
             <p>Low Cost Model</p>
           </div>

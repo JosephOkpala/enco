@@ -7,23 +7,19 @@
   --font-bold: 700;
 }
 
-.logo {
-  width: 6rem;
-}
-
 .main {
   width: 100%;
 }
 
 nav {
   width: 90%;
-  max-width: 1660px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-white);
-  padding: 1.5rem 0rem 1.5rem 0rem;
+  padding: 1.5rem 0rem;
   z-index: 2;
 }
 
@@ -39,7 +35,7 @@ nav {
 }
 
 .logo {
-  width: 8rem;
+  width: 7rem;
 }
 
 .nav-links a {
