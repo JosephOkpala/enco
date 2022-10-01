@@ -19,8 +19,25 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   line-height: 1.6;
+  position: relative;
+}
+
+.main {
+  width: 100%;
 }
 
 p {
   font-weight: var(--font-regular);
+}
+
+.error-page {
+  padding-top: 100px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-page h1 {
+  font-size: 4.5rem;
 }

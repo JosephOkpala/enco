@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div className="each-footer">
           <h4>Products</h4>
-          <Link to="/products" className="margin-bottom">
+          <Link to="#product" className="margin-bottom">
             Personal Loans
           </Link>
           <Link to="/products">Business Loans</Link>
@@ -64,6 +64,12 @@ const Footer = () => {
         </div>
       </div>
       <p className="copyright">Copyright 2020. All Rights Reserved.</p>
+      {/* <a target="_blank" href="https://www.google.com/maps/dir//Ikoyi%20Lagos">
+        <img
+          class="venue-map"
+          src="https://maps.googleapis.com/maps/api/staticmap?size=300x100&amp;markers=icon:https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/contentbuilder/map_marker_event_page.png%7CAjah%20Lagos&amp;style=feature:poi|visibility:off&amp;style=feature:transit|visibility:off&amp;key=AIzaSyBdTVDmXjzqG7Pn8O96SCgrlca6jk3CxLM"
+        />
+      </a> */}
     </footer>
   );
 };

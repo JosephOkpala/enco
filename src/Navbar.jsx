@@ -23,16 +23,18 @@ const Navbar = () => {
     <div className="nav-shadow">
       <nav>
         <div className="nav-logo">
-          <CustomNavLinks to="/">
+          <a href="/">
             <img src={logo} alt="Enco-Finance-Logo" className="logo" />
-          </CustomNavLinks>
+          </a>
         </div>
         <div className="nav-links">
           <CustomNavLinks to="/">Home</CustomNavLinks>
 
           <CustomNavLinks to="/about">About Enco</CustomNavLinks>
 
-          <CustomNavLinks to="/products">Products</CustomNavLinks>
+          <CustomNavLinks to="/products" id="product">
+            Products
+          </CustomNavLinks>
         </div>
       </nav>
     </div>
