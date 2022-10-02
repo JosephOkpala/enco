@@ -27,6 +27,11 @@ const Navbar = () => {
             <img src={logo} alt="Enco-Finance-Logo" className="logo" />
           </a>
         </div>
+        <div className="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <div className="nav-links">
           <CustomNavLinks to="/">Home</CustomNavLinks>
 

@@ -19,12 +19,12 @@ const Products = () => {
         <img
           src={ladySitting}
           alt="lady-sitting"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-once="true"
         />
         <div
           className="personal-loan-text loan-text"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-once="true"
         >
           <div className="loan-text-p">
@@ -57,7 +57,7 @@ const Products = () => {
       <div className="business-loan products-flex column ">
         <div
           className="business-loan-text loan-text"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-once="true"
         >
           <div className="loan-text-p">
@@ -81,7 +81,7 @@ const Products = () => {
         <img
           src={peopleGathered}
           alt="people gathering"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-once="true"
         />
       </div>

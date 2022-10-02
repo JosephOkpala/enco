@@ -27,17 +27,45 @@ body {
 }
 
 p {
-  font-weight: var(--font-regular);
+  font-weight: 400;
 }
 
 .error-page {
   padding-top: 100px;
   height: 60vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .error-page h1 {
   font-size: 4.5rem;
+}
+
+.error-page button {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background-color: hsla(0, 0%, 100%, 1);
+  font-size: 1.1rem;
+  border: 2px solid hsla(240, 8%, 15%, 1);
+  color: hsla(240, 8%, 15%, 1);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+}
+
+.error-page button:hover {
+  background-color: hsla(240, 8%, 15%, 1);
+  color: hsla(0, 0%, 100%, 1);
+}
+
+@media (max-width: 500px) {
+  .error-page h1 {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+  }
 }

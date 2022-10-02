@@ -1,15 +1,6 @@
-:root {
-  --color-blue: hsla(218, 100%, 43%, 1);
-  --color-white: hsla(0, 0%, 100%, 1);
-  --color-dark: hsla(240, 8%, 15%, 1);
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-bold: 700;
-}
-
 footer {
-  background-color: var(--color-blue);
-  color: var(--color-white);
+  background-color: hsla(218, 100%, 43%, 1);
+  color: hsla(0, 0%, 100%, 1);
   padding-bottom: 2rem;
 }
 
@@ -28,7 +19,7 @@ footer {
 }
 
 .footer p {
-  font-weight: var(--font-medium);
+  font-weight: 500;
 }
 
 .footer h4 {
@@ -37,7 +28,7 @@ footer {
 
 .each-footer a {
   display: block;
-  color: var(--color-white);
+  color: hsla(0, 0%, 100%, 1);
 }
 
 .socials {

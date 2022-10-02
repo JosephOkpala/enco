@@ -112,7 +112,7 @@ const About = () => {
     <div className="about-container">
       <h2>ABOUT ENCO</h2>
       <div className="about">
-        <div className="about-text" data-aos="fade-right" data-aos-once="true">
+        <div className="about-text" data-aos="fade-up" data-aos-once="true">
           <p>
             Enco Finance Company Limited was incorporated on 27 March 2018 as a
             limited liabilty company. It obtained its license from the Central
@@ -125,7 +125,7 @@ const About = () => {
             operates a low-cost model and a very low risk management philosophy.
           </p>
         </div>
-        <div className="about-image" data-aos="fade-left" data-aos-once="true">
+        <div className="about-image" data-aos="fade-up" data-aos-once="true">
           <img src={building} alt="a building" />
         </div>
       </div>

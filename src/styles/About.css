@@ -1,12 +1,3 @@
-:root {
-  --color-blue: hsla(218, 100%, 43%, 1);
-  --color-white: hsla(0, 0%, 100%, 1);
-  --color-dark: hsla(240, 8%, 15%, 1);
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-bold: 700;
-}
-
 .about-container {
   padding-top: 100px;
   margin: 0rem auto 6rem auto;
@@ -19,7 +10,7 @@
   font-size: 2.5rem;
   margin-bottom: 3rem;
   margin-top: 2rem;
-  color: var(--color-dark);
+  color: hsla(240, 8%, 15%, 1);
 }
 
 .about {
@@ -44,7 +35,7 @@
   max-width: 600px;
   line-height: 1.9;
   font-size: 1.1rem;
-  font-weight: var(--font-regular);
+  font-weight: 400;
 }
 
 .about-text p:not(:last-child) {
@@ -63,7 +54,7 @@
   align-items: center;
   gap: 2rem;
   text-align: center;
-  color: var(--color-dark);
+  color: hsla(240, 8%, 15%, 1);
   width: 90%;
   margin: 0 auto 8rem auto;
   max-width: 1600px;
@@ -112,7 +103,7 @@
 
 .core-values {
   text-align: center;
-  color: var(--color-dark);
+  color: hsla(240, 8%, 15%, 1);
   width: 90%;
   max-width: 1660px;
   margin: 0 auto;
@@ -124,7 +115,6 @@
 }
 
 .core-values p {
-  font-family: var(--font-md);
   margin-bottom: 3rem;
 }
 
@@ -140,7 +130,7 @@
 }
 
 .each-grid h4 {
-  font-weight: var(--font-medium);
+  font-weight: 500;
 }
 
 @media (max-width: 1024px) {

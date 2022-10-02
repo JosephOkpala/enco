@@ -1,12 +1,3 @@
-:root {
-  --color-blue: hsla(218, 100%, 43%, 1);
-  --color-white: hsla(0, 0%, 100%, 1);
-  --color-dark: hsla(240, 8%, 15%, 1);
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-bold: 700;
-}
-
 .main {
   width: 100%;
 }
@@ -18,14 +9,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-white);
+  background-color: hsla(0, 0%, 100%, 1);
   padding: 1.5rem 0rem;
   z-index: 2;
 }
 
 .nav-shadow {
   width: 100%;
-  background-color: var(--color-white);
+  background-color: hsla(0, 0%, 100%, 1);
   box-shadow: -1px 7px 5px -4px rgba(35, 35, 41, 0.2);
   -webkit-box-shadow: -1px 7px 5px -4px rgba(35, 35, 41, 0.2);
   -moz-box-shadow: -1px 7px 5px -4px rgba(35, 35, 41, 0.2);
@@ -38,17 +29,30 @@ nav {
   width: 7rem;
 }
 
+.burger {
+  cursor: pointer;
+}
+
+.burger div {
+  width: 2.2rem;
+  height: 0.2rem;
+  background-color: hsla(240, 8%, 15%, 1);
+}
+
+.burger div:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
 .nav-links a {
-  color: var(--color-dark);
+  color: hsla(240, 8%, 15%, 1);
   font-size: 1.3rem;
-  /* transition: all 0.3s ease; */
   position: relative;
 }
 
 .nav-links a::before {
   content: '';
   position: absolute;
-  background-color: var(--color-blue);
+  background-color: hsla(218, 100%, 43%, 1);
   width: 100%;
   height: 0.2rem;
   border-radius: 2px;
@@ -63,9 +67,39 @@ nav {
 }
 
 .nav-links a:hover {
-  color: var(--color-blue) !important;
+  color: hsla(218, 100%, 43%, 1) !important;
 }
 
 .nav-links a:not(:last-child) {
   margin-right: 2rem;
+}
+
+@media (max-width: 767px) {
+  .nav-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    background-color: #d8d8d8;
+    /* inset: 10% 10% 15% 15%; */
+    top: 82px;
+    right: 1px;
+    height: 40vh;
+    width: 60%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+  }
+  .nav-links a:not(:last-child) {
+    margin: 0 0 2rem 0;
+  }
+}
+
+.nav-active {
+  visibility: visible;
+  opacity: 1;
 }

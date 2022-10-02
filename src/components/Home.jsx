@@ -33,11 +33,7 @@ const Home = () => {
         </h2>
         <p className="services">Services</p>
         <div className="what-we-can-do-content">
-          <div
-            data-aos="fade-right"
-            data-aos-once="true"
-            className="content-text"
-          >
+          <div data-aos="fade-up" data-aos-once="true" className="content-text">
             <p>
               The country operates in three major segments of the financial
               system namely the retail, corporate and public sector. In the
@@ -56,11 +52,7 @@ const Home = () => {
               to meet the financing needs of its members.
             </p>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-once="true"
-            className="content-img"
-          >
+          <div data-aos="fade-up" data-aos-once="true" className="content-img">
             <div className="women-img">
               <img src={img1} alt="african-american-woman1" />
               <img src={img2} alt="african-american-woman2" />
