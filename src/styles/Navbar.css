@@ -31,6 +31,7 @@ nav {
 
 .burger {
   cursor: pointer;
+  display: none;
 }
 
 .burger div {
@@ -96,6 +97,10 @@ nav {
   }
   .nav-links a:not(:last-child) {
     margin: 0 0 2rem 0;
+  }
+
+  .burger {
+    display: block;
   }
 }
 
