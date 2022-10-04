@@ -37,9 +37,7 @@ const Navbar = () => {
 
           <CustomNavLinks to="/about">About Enco</CustomNavLinks>
 
-          <CustomNavLinks to="/products" id="product">
-            Products
-          </CustomNavLinks>
+          <CustomNavLinks to="/products">Products</CustomNavLinks>
         </div>
       </nav>
     </div>
