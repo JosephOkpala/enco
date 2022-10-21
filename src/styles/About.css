@@ -7,7 +7,7 @@
 
 .about-container h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
   margin-top: 2rem;
   color: hsla(240, 8%, 15%, 1);
@@ -60,23 +60,14 @@
   max-width: 1600px;
 }
 
+.mission-vision div {
+  background-color: #e5eefb;
+  border-radius: 24px;
+  padding: 3rem 1rem;
+}
+
 .mission-vision img {
   width: 6rem;
-}
-
-.mission {
-  background-color: #e5eefb;
-  border-radius: 24px;
-  padding: 3rem 1rem;
-}
-
-.vision {
-  background-color: #e5eefb;
-  border-radius: 24px;
-  padding: 3rem 1rem;
-}
-
-.mission img {
   margin-bottom: 2rem;
 }
 
@@ -89,12 +80,12 @@
   line-height: 1.8;
 }
 
-.mission p {
-  max-width: 400px;
+.mission {
+  padding-bottom: 10rem;
 }
 
-.vision img {
-  margin-bottom: 2rem;
+.mission p {
+  max-width: 450px;
 }
 
 .vision p {

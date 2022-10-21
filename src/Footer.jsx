@@ -15,14 +15,12 @@ const Footer = () => {
         </div>
         <div className="each-footer">
           <h4>Products</h4>
-          <Link to="#product" className="margin-bottom">
-            Personal Loans
-          </Link>
+          <Link to="#product">Personal Loans</Link>
           <Link to="/products">Business Loans</Link>
         </div>
         <div className="each-footer">
           <h4>Contact Us</h4>
-          <p className="margin-bottom">01-222-2222</p>
+          <p className="">01-222-2222</p>
           <p className="margin-bottom">enquiries@encofinance.com</p>
           <div className="socials">
             <Link

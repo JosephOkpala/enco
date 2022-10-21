@@ -23,12 +23,16 @@ footer {
 }
 
 .footer h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .each-footer a {
   display: block;
   color: hsla(0, 0%, 100%, 1);
+}
+
+.each-footer p {
+  font-weight: 400;
 }
 
 .socials {
@@ -51,7 +55,7 @@ footer {
 }
 
 .margin-bottom {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /*    min-width:769px and max-width:900px     */

@@ -46,7 +46,7 @@ nav {
 
 .nav-links a {
   color: hsla(240, 8%, 15%, 1);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   position: relative;
 }
 
@@ -72,7 +72,7 @@ nav {
 }
 
 .nav-links a:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 4rem;
 }
 
 @media (max-width: 767px) {
@@ -106,4 +106,16 @@ nav {
 .nav-active {
   visibility: visible;
   opacity: 1;
+}
+
+.toggle .one {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .two {
+  opacity: 0;
+}
+
+.toggle .three {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
