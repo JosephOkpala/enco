@@ -10,7 +10,7 @@ const Products = () => {
   }, []);
   return (
     <div className="product-container">
-      <h1>Our Products</h1>
+      <h1>OUR PRODUCTS</h1>
       <div className="loans" data-aos="fade-up" data-aos-once="true">
         <div className="circle"></div>
         <h3>Personal Loans</h3>
