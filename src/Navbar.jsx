@@ -73,8 +73,6 @@ const Navbar = () => {
           <CustomNavLinks to="/about">About Enco</CustomNavLinks>
 
           <CustomNavLinks to="/products">Products</CustomNavLinks>
-
-          <CustomNavLinks to="/contact">Contact</CustomNavLinks>
         </div>
       </nav>
     </div>

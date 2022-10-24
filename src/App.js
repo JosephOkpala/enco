@@ -13,7 +13,6 @@ import Home from './components/Home';
 import About from './components/About';
 import Products from './components/Products';
 import Error from './components/Error';
-import Contact from './components/Contact';
 
 const App = () => {
   return (
@@ -23,7 +22,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
