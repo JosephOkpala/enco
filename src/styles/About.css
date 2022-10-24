@@ -82,10 +82,15 @@
 
 .mission {
   padding-bottom: 10rem;
+  height: 380px;
 }
 
 .mission p {
   max-width: 450px;
+}
+
+.vision {
+  height: 380px;
 }
 
 .vision p {
