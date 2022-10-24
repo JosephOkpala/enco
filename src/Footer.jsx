@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div className="each-footer">
           <h4>Products</h4>
-          <Link to="#product">Personal Loans</Link>
+          <Link to="/products">Personal Loans</Link>
           <Link to="/products">Business Loans</Link>
         </div>
         <div className="each-footer">
