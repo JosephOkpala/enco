@@ -5,7 +5,13 @@ import facebook from './assets/facebook.png';
 import instagram from './assets/instagram.png';
 import './styles/Footer.css';
 
-const Footer = () => {
+const Footer = ({ product }) => {
+  const scrollToProducts = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth',
+    });
+  };
   return (
     <footer>
       <div className="footer">
@@ -16,8 +22,8 @@ const Footer = () => {
         </div>
         <div className="each-footer">
           <h4>Products</h4>
-          <Link to="/products">Personal Loans</Link>
-          <Link to="/products">Business Loans</Link>
+          <p onClick={() => scrollToProducts(product)}>Personal Loans</p>
+          <p to="/products">Business Loans</p>
         </div>
         <div className="each-footer">
           <h4>Contact Us</h4>
