@@ -8,6 +8,7 @@ import lowcost from '../assets/low-cost-icon.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import '../styles/Home.css';
 
 const Home = () => {
   useEffect(() => {

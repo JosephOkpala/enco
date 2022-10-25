@@ -1,3 +1,4 @@
+import '../styles/Testimonials.css';
 // const Testimonials = () => {
 //   const testimonials = [
 //     {

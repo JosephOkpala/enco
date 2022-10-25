@@ -3,6 +3,7 @@ import peopleGathered from '../assets/people-gathered.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import '../styles/Product.css';
 
 const Products = () => {
   useEffect(() => {
