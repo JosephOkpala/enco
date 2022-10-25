@@ -40,19 +40,26 @@ p {
 }
 
 .error-page {
-  padding-top: 100px;
   height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.error-text {
+  text-align: left;
   margin-bottom: 2rem;
 }
 
-.error-page h1 {
-  font-size: 4.5rem;
-  margin-bottom: 2rem;
+.error-text h1 {
+  font-size: 4rem;
+}
+
+.error-text p {
+  color: #555;
 }
 
 .error-page button {
@@ -65,6 +72,7 @@ p {
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
+  user-select: none;
 }
 
 .error-page button:hover {
@@ -73,9 +81,7 @@ p {
 }
 
 @media (max-width: 500px) {
-  .error-page h1 {
-    width: 95%;
-    margin: 0 auto 2rem auto;
-    font-size: 2.5rem;
+  .error-text h1 {
+    font-size: 3rem;
   }
 }
