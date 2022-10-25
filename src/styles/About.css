@@ -1,5 +1,5 @@
 .about-container {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   margin: 0rem auto 6rem auto;
   width: 90%;
   max-width: 1600px;
@@ -43,7 +43,7 @@
 }
 
 .about-image img {
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
   display: block;
 }

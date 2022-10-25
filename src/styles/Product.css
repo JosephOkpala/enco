@@ -1,5 +1,5 @@
 .product-container {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   width: 90%;
   max-width: 1600px;
   margin: 0 auto;
@@ -10,7 +10,7 @@
   color: hsla(240, 8%, 15%, 1);
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   margin-top: 4rem;
 }
 

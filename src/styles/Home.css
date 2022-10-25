@@ -2,9 +2,9 @@ body {
   overflow-x: hidden;
 }
 
-.home {
+/* .home {
   padding-top: 80px;
-}
+} */
 
 .background-img {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),

@@ -20,7 +20,9 @@ nav {
   box-shadow: -1px 7px 5px -4px rgba(35, 35, 41, 0.2);
   -webkit-box-shadow: -1px 7px 5px -4px rgba(35, 35, 41, 0.2);
   -moz-box-shadow: -1px 7px 5px -4px rgba(35, 35, 41, 0.2);
-  position: fixed;
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 2;
 }
@@ -107,7 +109,7 @@ nav {
 }
 
 @media (min-width: 768px) {
-  .nav-links a::before {
+  .nav-links a.active::before {
     content: '';
     position: absolute;
     background-color: hsla(218, 100%, 43%, 1);
@@ -115,11 +117,11 @@ nav {
     height: 0.2rem;
     border-radius: 2px;
     bottom: -10px;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.3s ease;
   }
 
-  .nav-links a:hover::before {
+  .nav-links a.active::before {
     bottom: -7px;
     opacity: 1;
   }

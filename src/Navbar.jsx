@@ -2,6 +2,32 @@ import { useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from './assets/Enco-logo-nav.png';
 
+function useOutsideAlerter(reff) {
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (reff.current && !reff.current.contains(event.target)) {
+        alert('You clicked outside of me!');
+      }
+    }
+    // Bind the event listener
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [reff]);
+}
+
+/**
+ * Component that alerts if you click outside of it
+ */
+// export default function OutsideAlerter(props) {
+//   const wrapperRef = useRef(null);
+//   useOutsideAlerter(wrapperRef);
+
+//   return <div ref={wrapperRef}>{props.children}</div>;
+// }
+
 // const navSlide = () => {
 //   const burger = document.querySelector('.burger');
 //   const nav = document.querySelector('.nav-links');
