@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/About.css';
+import Footer from '../Footer';
 
 const MissionAndVision = () => {
   return (
@@ -110,30 +111,35 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about-container">
-      <h2>ABOUT ENCO</h2>
-      <div className="about">
-        <div className="about-text" data-aos="fade-up" data-aos-once="true">
-          <p>
-            Enco Finance Company Limited was incorporated on 27 March 2018 as a
-            limited liabilty company. It obtained its license from the Central
-            Bank of Nigeria on 6 February 2020 to operate as a finance company.
-          </p>
-          <p>
-            The business operates on a highly efficient model driven by
-            technology and automation. Loan applications, approvals and
-            processing are largely online using a work flow process. The company
-            operates a low-cost model and a very low risk management philosophy.
-          </p>
+    <div>
+      <div className="about-container">
+        <h2>ABOUT ENCO</h2>
+        <div className="about">
+          <div className="about-text" data-aos="fade-up" data-aos-once="true">
+            <p>
+              Enco Finance Company Limited was incorporated on 27 March 2018 as
+              a limited liabilty company. It obtained its license from the
+              Central Bank of Nigeria on 6 February 2020 to operate as a finance
+              company.
+            </p>
+            <p>
+              The business operates on a highly efficient model driven by
+              technology and automation. Loan applications, approvals and
+              processing are largely online using a work flow process. The
+              company operates a low-cost model and a very low risk management
+              philosophy.
+            </p>
+          </div>
+          <div className="about-image" data-aos="fade-up" data-aos-once="true">
+            <img src={building} alt="a building" />
+          </div>
         </div>
-        <div className="about-image" data-aos="fade-up" data-aos-once="true">
-          <img src={building} alt="a building" />
-        </div>
+
+        <MissionAndVision />
+
+        <CoreValues />
       </div>
-
-      <MissionAndVision />
-
-      <CoreValues />
+      <Footer />
     </div>
   );
 };

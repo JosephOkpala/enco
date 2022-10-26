@@ -5,7 +5,7 @@ import facebook from './assets/facebook.png';
 import instagram from './assets/instagram.png';
 import './styles/Footer.css';
 
-const Footer = ({ product }) => {
+const Footer = ({ product, productTwo }) => {
   const scrollToProducts = (elementRef) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
@@ -23,7 +23,7 @@ const Footer = ({ product }) => {
         <div className="each-footer">
           <h4>Products</h4>
           <p onClick={() => scrollToProducts(product)}>Personal Loans</p>
-          <p to="/products">Business Loans</p>
+          <p onClick={() => scrollToProducts(productTwo)}>Business Loans</p>
         </div>
         <div className="each-footer">
           <h4>Contact Us</h4>

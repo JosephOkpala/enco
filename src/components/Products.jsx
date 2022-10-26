@@ -8,6 +8,7 @@ import Footer from '../Footer';
 
 const Products = () => {
   const personalRef = useRef(null);
+  const personalRefTwo = useRef(null);
 
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -55,7 +56,12 @@ const Products = () => {
             </ul>
           </div>
         </div>
-        <div className="loans" data-aos="fade-up" data-aos-once="true">
+        <div
+          className="loans"
+          data-aos="fade-up"
+          data-aos-once="true"
+          ref={personalRefTwo}
+        >
           <div className="circle"></div>
           <h3>Business Loans</h3>
         </div>
@@ -92,7 +98,7 @@ const Products = () => {
           />
         </div>
       </div>
-      <Footer product={personalRef} />
+      <Footer product={personalRef} productTwo={personalRefTwo} />
     </div>
   );
 };

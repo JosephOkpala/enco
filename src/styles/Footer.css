@@ -26,13 +26,9 @@ footer {
   margin-bottom: 0.6rem;
 }
 
-.each-footer a {
-  display: block;
-  color: hsla(0, 0%, 100%, 1);
-}
-
 .each-footer p {
   font-weight: 400;
+  cursor: pointer;
 }
 
 .socials {
