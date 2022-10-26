@@ -20,7 +20,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
   background-color: #555;
 }
 
@@ -78,6 +78,13 @@ p {
 .error-page button:hover {
   background-color: hsla(240, 8%, 15%, 1);
   color: hsla(0, 0%, 100%, 1);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 }
 
 @media (max-width: 500px) {

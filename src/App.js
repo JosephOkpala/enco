@@ -16,7 +16,7 @@ const Error = lazy(() => import('./components/Error'));
 const App = () => {
   return (
     <div className="main">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="loading">Loading...</div>}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

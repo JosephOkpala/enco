@@ -22,13 +22,24 @@ const Footer = ({ product, productTwo }) => {
         </div>
         <div className="each-footer">
           <h4>Products</h4>
-          <p onClick={() => scrollToProducts(product)}>Personal Loans</p>
-          <p onClick={() => scrollToProducts(productTwo)}>Business Loans</p>
+          <Link onClick={() => scrollToProducts(product)} to="/products">
+            Personal Loans
+          </Link>
+          <Link onClick={() => scrollToProducts(productTwo)}>
+            Business Loans
+          </Link>
         </div>
         <div className="each-footer">
           <h4>Contact Us</h4>
           <p className="">01-222-2222</p>
-          <p className="margin-bottom">enquiries@encofinance.com</p>
+          <p
+            onClick={() =>
+              (window.location = 'mailto:okpalajoseph995@gmail.com')
+            }
+            className="margin-bottom"
+          >
+            enquiries@encofinance.com
+          </p>
           <div className="socials">
             <Link
               to="https://www.linkedin.com/company/enco-finance/"

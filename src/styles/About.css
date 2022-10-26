@@ -1,5 +1,4 @@
 .about-container {
-  /* padding-top: 100px; */
   margin: 0rem auto 6rem auto;
   width: 90%;
   max-width: 1600px;
@@ -8,8 +7,7 @@
 .about-container h2 {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
+  margin: 3rem 0 2rem 0;
   color: hsla(240, 8%, 15%, 1);
 }
 
