@@ -34,7 +34,7 @@ const Footer = ({ product, productTwo }) => {
           <p className="">01-222-2222</p>
           <p
             onClick={() =>
-              (window.location = 'mailto:okpalajoseph995@gmail.com')
+              (window.location = 'mailto:enquiries@encofinance.com')
             }
             className="margin-bottom"
           >
