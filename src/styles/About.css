@@ -73,7 +73,7 @@
 
 .mission-vision h4 {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .mission-vision p {
@@ -81,7 +81,6 @@
 }
 
 .mission {
-  padding-bottom: 10rem;
   height: 380px;
 }
 
@@ -155,5 +154,9 @@
 @media (max-width: 500px) {
   .about-image img {
     max-width: 95%;
+  }
+
+  .vision {
+    height: 440px;
   }
 }
