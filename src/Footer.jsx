@@ -25,7 +25,7 @@ const Footer = ({ product, productTwo }) => {
           <Link onClick={() => scrollToProducts(product)} to="/products">
             Personal Loans
           </Link>
-          <Link onClick={() => scrollToProducts(productTwo)}>
+          <Link onClick={() => scrollToProducts(productTwo)} to="/products">
             Business Loans
           </Link>
         </div>

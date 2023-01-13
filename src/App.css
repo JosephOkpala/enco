@@ -11,6 +11,7 @@ body {
   scroll-behavior: smooth;
   line-height: 1.6;
   position: relative;
+  background-color: white;
 }
 
 ::-webkit-scrollbar-track {
