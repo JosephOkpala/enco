@@ -37,6 +37,7 @@ nav {
 .burger div {
   width: 2.2rem;
   height: 0.2rem;
+  border-radius: 20px;
   background-color: hsla(240, 8%, 15%, 1);
   transition: 0.5s ease;
 }
@@ -85,8 +86,27 @@ nav {
     margin: 0 0 2rem 0;
   }
 
+  .nav-links.open {
+    visibility: visible;
+    opacity: 1;
+  }
+
   .burger {
     display: block;
+  }
+
+  .one.open {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg);
+  }
+
+  .two.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .three.open:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg);
   }
 }
 
@@ -96,7 +116,7 @@ nav {
   transition: 0.5s ease;
 }
 
-.toggle .one {
+/* .toggle .one {
   transform: rotate(-45deg) translate(-5px, 6px);
   transition: 0.5s ease;
 }
@@ -109,7 +129,7 @@ nav {
 .toggle .three {
   transform: rotate(45deg) translate(-5px, -6px);
   transition: 0.5s ease;
-}
+} */
 
 @media (min-width: 768px) {
   .nav-links a.active::before {

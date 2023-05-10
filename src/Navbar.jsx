@@ -1,46 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from './assets/Enco-logo-nav.png';
 import './styles/Navbar.css';
-
-// function useOutsideAlerter(reff) {
-//   useEffect(() => {
-//     function handleClickOutside(event) {
-//       if (reff.current && !reff.current.contains(event.target)) {
-//         alert('You clicked outside of me!');
-//       }
-//     }
-//     // Bind the event listener
-//     document.addEventListener('mousedown', handleClickOutside);
-//     return () => {
-//       // Unbind the event listener on clean up
-//       document.removeEventListener('mousedown', handleClickOutside);
-//     };
-//   }, [reff]);
-// }
-
-/**
- * Component that alerts if you click outside of it
- */
-// export default function OutsideAlerter(props) {
-//   const wrapperRef = useRef(null);
-//   useOutsideAlerter(wrapperRef);
-
-//   return <div ref={wrapperRef}>{props.children}</div>;
-// }
-
-// const navSlide = () => {
-//   const burger = document.querySelector('.burger');
-//   const nav = document.querySelector('.nav-links');
-
-//   burger.addEventListener('click', () => {
-//     nav.classList.toggle('nav-active');
-
-//     burger.classList.toggle('toggle');
-//   });
-// };
-
-// navSlide();
 
 const CustomNavLinks = ({ to, ...props }) => {
   let activeStyle = {
@@ -60,27 +21,24 @@ const CustomNavLinks = ({ to, ...props }) => {
 };
 
 const Navbar = () => {
-  const ref = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+    document.body.style.overflow = isMenuOpen ? 'auto' : 'hidden';
+  };
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+    document.body.style.overflow = 'auto';
+  };
 
   useEffect(() => {
-    const handleClick = (event) => {
-      const burger = document.querySelector('.burger');
-      const nav = document.querySelector('.nav-links');
-
-      nav.classList.toggle('nav-active');
-      burger.classList.toggle('toggle');
-    };
-
-    const burger = ref.current;
-    const nav = ref.current;
-
-    burger.addEventListener('click', handleClick);
-
     return () => {
-      burger.removeEventListener('click', handleClick);
-      nav.removeEventListener('click', handleClick);
+      document.body.style.overflow = 'auto';
     };
-  }, [ref]);
+  }, []);
+
   return (
     <div className="nav-shadow">
       <nav>
@@ -89,17 +47,23 @@ const Navbar = () => {
             <img src={logo} alt="Enco-Finance-Logo" className="logo" />
           </a>
         </div>
-        <div className="burger" ref={ref}>
-          <div className="one"></div>
-          <div className="two"></div>
-          <div className="three"></div>
+        <div className="burger" onClick={handleMenuToggle}>
+          <div className={`one ${isMenuOpen ? 'open' : ''}`}></div>
+          <div className={`two ${isMenuOpen ? 'open' : ''}`}></div>
+          <div className={`three ${isMenuOpen ? 'open' : ''}`}></div>
         </div>
-        <div className="nav-links">
-          <CustomNavLinks to="/">Home</CustomNavLinks>
+        <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+          <CustomNavLinks to="/" onClick={handleLinkClick}>
+            Home
+          </CustomNavLinks>
 
-          <CustomNavLinks to="/about">About Enco</CustomNavLinks>
+          <CustomNavLinks to="/about" onClick={handleLinkClick}>
+            About Enco
+          </CustomNavLinks>
 
-          <CustomNavLinks to="/products">Products</CustomNavLinks>
+          <CustomNavLinks to="/products" onClick={handleLinkClick}>
+            Products
+          </CustomNavLinks>
         </div>
       </nav>
     </div>
